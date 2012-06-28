@@ -1,0 +1,10 @@
+[user]
+        name = yuchih
+        email = yuchih@2be.com.tw
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        log = auto
+[alias]
+        view = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %cn %Cgreen(%cr)%Creset'
