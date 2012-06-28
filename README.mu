@@ -1,14 +1,16 @@
-*Installation:
+* Installation:
 
-    git clone git://github.com/nelstrom/dotvim.git ~/.vim
+    git clone git://github.com/yuchih/dotfiles.git ~/.vim
 
-*Create symlinks:
+* Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
 
-*Switch to the `~/.vim` directory, and fetch submodules:
+* Switch to the `~/.vim` directory, and fetch submodules:
 
     cd ~/.vim
     git submodule init
     git submodule update
+
+** VIM & Ctag.org
+http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/

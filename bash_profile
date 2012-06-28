@@ -9,3 +9,7 @@ if [ $EUID = 0 ]; then
 else
     export PS1='\[\033[01;39m\]\u\[\033[37m\]@\[\033[37m\]\H\[\033[39m\]: \[\033[32m\]\W\[\033[39m\]$(__git_ps1) \[\033[01;39m\]\$ \[\033[39m\] '
 fi
+
+alias grep='grep --color=auto'
+alias ls=${LS_ALIAS}
+alias ll='ls -al'
