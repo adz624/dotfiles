@@ -1,3 +1,30 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bundle/jellybeans"]
+	path = bundle/jellybeans
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "bundle/neocomplcache"]
+	path = bundle/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.git
+[submodule "bundle/php-syntax"]
+	path = bundle/php-syntax
+	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/tarbar"]
+	path = bundle/tarbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/vim-css-color"]
+	path = bundle/vim-css-color
+	url = https://github.com/skammer/vim-css-color.git
+[submodule "bundle/json-syntax"]
+	path = bundle/json-syntax
+	url = https://github.com/leshill/vim-json.git
+[submodule "bundle/pdv-standalone"]
+	path = bundle/pdv-standalone
+	url = https://github.com/lessmind/pdv-standalone.git
+[submodule "bundle/scss-syntax"]
+	path = bundle/scss-syntax
+	url = https://github.com/cakebaker/scss-syntax.vim.git
