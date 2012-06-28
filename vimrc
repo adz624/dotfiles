@@ -1,4 +1,6 @@
-" nodejs-errorformat
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 set expandtab
 set shiftwidth=4
 set softtabstop=4
