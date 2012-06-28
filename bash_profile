@@ -1,3 +1,5 @@
+# root filename .bashrc, use filename .bash_profile
+
 if [ -f `brew --prefix`/etc/bash_completion ]; then
 	. `brew --prefix`/etc/bash_completion
 fi
@@ -11,5 +13,3 @@ else
 fi
 
 alias grep='grep --color=auto'
-alias ls=${LS_ALIAS}
-alias ll='ls -al'
