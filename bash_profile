@@ -3,6 +3,8 @@
 # @author yuchih <yuchih@2be.com.tw>
 
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
+    export CLICOLOR=1
+    export LSCOLORS=FxFxCxDxBxegedabagacad
     . `brew --prefix`/etc/bash_completion
 elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
