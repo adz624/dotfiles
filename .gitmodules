@@ -28,3 +28,6 @@
 [submodule "bundle/coffee-script-syntax"]
 	path = bundle/coffee-script-syntax
 	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "LS_COLORS"]
+	path = LS_COLORS
+	url = https://github.com/trapd00r/LS_COLORS.git
