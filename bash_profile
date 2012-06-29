@@ -1,7 +1,11 @@
 # root filename .bashrc, use filename .bash_profile
+# @versio 0.01a
+# @author yuchih <yuchih@2be.com.tw>
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-	. `brew --prefix`/etc/bash_completion
+if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+    . /etc/bash_completion
 fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1
