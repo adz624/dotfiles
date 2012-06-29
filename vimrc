@@ -1,5 +1,4 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 set expandtab
 set shiftwidth=4
@@ -57,6 +56,7 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 autocmd BufNewFile,BufRead *.scss set ft=scss
+autocmd BufWritePost *.coffee silent CoffeeMake! -b | cwindow
 
 " PDV standalone
 " This is a standalone version of Tobias Schlitt's famous phpDocumentor for Vim plugin
