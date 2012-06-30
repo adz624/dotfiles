@@ -5,7 +5,9 @@
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
     export CLICOLOR=1
     export LSCOLORS=FxFxCxDxBxegedabagacad
-    . `brew --prefix`/etc/bash_completion
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+        . `brew --prefix`/etc/bash_completion
+    fi
 elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     if [ -f $HOME/.vim/LS_COLORS/LS_COLORS ]; then
         eval $( dircolors -b $HOME/.vim/LS_COLORS/LS_COLORS )
