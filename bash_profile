@@ -2,6 +2,9 @@
 # @versio 0.01a
 # @author yuchih <yuchih@2be.com.tw>
 
+PATH=$PATH:/usr/local/zend/bin:/usr/local/zend/mysql/bin 
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/zend/lib 
+
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
     export CLICOLOR=1
     export LSCOLORS=FxFxCxDxBxegedabagacad

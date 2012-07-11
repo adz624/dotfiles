@@ -31,3 +31,6 @@
 [submodule "LS_COLORS"]
 	path = LS_COLORS
 	url = https://github.com/trapd00r/LS_COLORS.git
+[submodule "bundle/instant-markdown"]
+	path = bundle/instant-markdown
+	url = https://github.com/suan/vim-instant-markdown.git
