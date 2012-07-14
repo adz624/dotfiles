@@ -1,6 +1,16 @@
+Require:
+-------
+* xcode 4.3.x or highter
+* xcode command line tool
+* [Homebrew](http://mxcl.github.com/homebrew/) -- Homebrew
+
 Installation:
 ------------
     git clone git://github.com/yuchih/dotfiles.git ~/.vim
+    brew install bash-completion git nodejs
+    curl http://npmjs.org/install.sh | sh
+    [sudo] gem install redcarpet pygments.rb
+    [sudo] npm -g install instant-markdown-d
 
 Create symlinks:
 ---------------
