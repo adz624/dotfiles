@@ -19,6 +19,7 @@ Create symlinks:
     ln -s ~/.vim/LS_COLORS ~/.LS_COLORS
     ln -s ~/.vim/gitconfig ~/.gitconfig
     ln -s ~/.vim/bash_profile ~/.bash_profile
+    ln -s ~/.vim/bash_completion.d/vimCtags `brew --prefix`/etc/bash_completion/vimctag
 
 Switch to the `~/.vim` directory, and fetch submodules:
 ------------------------------------------------------

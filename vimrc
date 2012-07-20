@@ -5,7 +5,7 @@ set shiftwidth=4
 " set softtabstop=4
 set tabstop=4
 
-" colorscheme on
+" colorschema on
 syntax on
 
 " syntax highlighting

@@ -2,7 +2,7 @@
 # @versio 0.01a
 # @author yuchih <yuchih@2be.com.tw>
 
-PATH=$PATH:/usr/local/zend/bin:/usr/local/zend/mysql/bin 
+PATH=$PATH:/usr/local/zend/bin:/usr/local/zend/mysql/bin:/usr/local/sbin 
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/zend/lib 
 
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
