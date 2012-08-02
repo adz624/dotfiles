@@ -7,7 +7,7 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/zend/lib
 
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
     export CLICOLOR=1
-    export LSCOLORS=FxFxCxDxBxegedabagacad
+    export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
     if [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion
     fi
