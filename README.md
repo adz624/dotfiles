@@ -18,7 +18,7 @@
     [linux] cat ~/.vim/bash_profile >> ~/.bashrc
     [macos] ln -s ~/.vim/bash_completion.d/vimCtags `brew --prefix`/etc/bash_completion/vimctag
 
-    // root
+    [root]
     ln -s ~User/.vim .
     ln -s ~User/.vimrc .
     ln -s ~User/.bash_profile .profile
