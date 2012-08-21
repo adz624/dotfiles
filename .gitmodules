@@ -46,3 +46,6 @@
 [submodule "bundle/zencoding"]
 	path = bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule "bundle/gitosis"]
+	path = bundle/gitosis
+	url = https://github.com/timcharper/gitosis.vim.git
