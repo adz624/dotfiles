@@ -14,6 +14,7 @@
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gitconfig ~/.gitconfig
+    ln -s ~/.vim/ctags ~/.ctags
     [osx] ln -s ~/.vim/bash_profile ~/.bash_profile
     [linux] cat ~/.vim/bash_profile >> ~/.bashrc
     [macos] ln -s ~/.vim/bash_completion.d/vimCtags `brew --prefix`/etc/bash_completion/vimctag
