@@ -7,6 +7,6 @@
         branch = auto
         log = auto
 [alias]
-        view = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %cn %Cgreen(%cr)%Creset'
+        view = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblueby %an %Cgreen(%cr)%Creset'
 [core]
         editor = vim        
