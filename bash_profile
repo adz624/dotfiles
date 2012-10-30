@@ -1,5 +1,5 @@
 # root filename .bashrc, use filename .bash_profile
-# @versio 0.01a
+# @versio 0.02a
 # @author yuchih <yuchih@2be.com.tw>
 
 if [ -d "/usr/local/zend" ]; then
