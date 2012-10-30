@@ -6,7 +6,6 @@
 # Installation:
     git clone git://github.com/yuchih/dotfiles.git ~/.vim
     brew install bash-completion git nodejs
-    curl http://npmjs.org/install.sh | sh
     [sudo] gem install redcarpet pygments.rb
     [sudo] npm -g install instant-markdown-d
 
