@@ -63,26 +63,6 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 
-" autocomplete 
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css,sass,scss set omnifunc=csscomplete#CompleteCSS
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-autocmd BufNewFile,BufRead *.scss set ft=scss
-autocmd BufWritePost *.coffee silent CoffeeMake! -b | cwindow
-
-" PDV standalone
-" This is a standalone version of Tobias Schlitt's famous phpDocumentor for Vim plugin
-" [Github] https://github.com/lessmind/pdv-standalone.git
-nnoremap <C-K> :call PhpDocSingle()<CR>
-vnoremap <C-K> :call PhpDocRange()<CR>
-
-let g:pdv_cfg_Version = '0.05'
-let g:pdv_cfg_Author = 'yuchih <yuchih@2be.com.tw>'
-let g:pdv_cfg_Copyright = 'Copyright 2011 by yuchih <yuchih@2be.com.tw>'
-
 if has("autocmd")
     filetype on
     filetype plugin on
