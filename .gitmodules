@@ -10,9 +10,6 @@
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
 	url = https://github.com/skammer/vim-css-color.git
-[submodule "bundle/json-syntax"]
-	path = bundle/json-syntax
-	url = https://github.com/leshill/vim-json.git
 [submodule "bundle/scss-syntax"]
 	path = bundle/scss-syntax
 	url = https://github.com/cakebaker/scss-syntax.vim.git
