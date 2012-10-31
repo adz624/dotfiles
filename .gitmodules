@@ -19,9 +19,6 @@
 [submodule "bundle/json-syntax"]
 	path = bundle/json-syntax
 	url = https://github.com/leshill/vim-json.git
-[submodule "bundle/pdv-standalone"]
-	path = bundle/pdv-standalone
-	url = https://github.com/lessmind/pdv-standalone.git
 [submodule "bundle/scss-syntax"]
 	path = bundle/scss-syntax
 	url = https://github.com/cakebaker/scss-syntax.vim.git
@@ -49,3 +46,6 @@
 [submodule "bundle/gitosis"]
 	path = bundle/gitosis
 	url = https://github.com/timcharper/gitosis.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git

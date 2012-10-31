@@ -1,5 +1,17 @@
 call pathogen#infect()
 
+set fencs=utf-8,vim,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+set fenc=utf-8
+set enc=utf-8
+
+set iminsert=0 imsearch=0
+
+if has('multi_byte_ime')
+    hi Cursor guifg=bg guibg=Orange gui=NONE
+    hi CursorIM guifg=NONE guibg=Skyblue gui=NONE
+    set iminsert=0 imsearch=0
+endi
+
 set expandtab
 set shiftwidth=4
 " set softtabstop=4
@@ -12,8 +24,11 @@ syntax on
 set background=dark
 set t_Co=256
 
-" disable compatible to vi
-set nocompatible
+set nobackup
+set ignorecase 
+set gdefault
+set nu!
+set ai!
 
 " enable backspace
 set backspace=2
