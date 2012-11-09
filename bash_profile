@@ -14,9 +14,18 @@ fi
 if [ $(uname) == 'Darwin' ] && [ -f `brew --prefix`/etc/bash_completion ]; then
     export CLICOLOR=1
     export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
+
     if [ -f `brew --prefix`/etc/bash_completion ]; then
         . `brew --prefix`/etc/bash_completion
     fi
+    # for Zend Server CE
+    MACOSX_DEPLOYMENT_TARGET=10.8
+    CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp"
+    CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe"
+    CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe"
+    LDFLAGS="-arch i386 -arch x86_64 -bind_at_load"
+    export CFLAGS CXXFLAGS LDFLAGS CCFLAGS MACOSX_DEPLOYMENT_TARGET
+
 elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     if [ -f $HOME/.vim/LS_COLORS/LS_COLORS ]; then
         eval $( dircolors -b $HOME/.vim/LS_COLORS/LS_COLORS )
@@ -25,13 +34,6 @@ elif [ $(uname) == 'Linux' ] && [ -f /etc/bash_completion ] && ! shopt -oq posix
 fi
 
 export GIT_PS1_SHOWDIRTYSTATE=1
-
-MACOSX_DEPLOYMENT_TARGET=10.8
-CFLAGS="-arch i386 -arch x86_64 -g -Os -pipe -no-cpp-precomp"
-CCFLAGS="-arch i386 -arch x86_64 -g -Os -pipe"
-CXXFLAGS="-arch i386 -arch x86_64 -g -Os -pipe"
-LDFLAGS="-arch i386 -arch x86_64 -bind_at_load"
-export CFLAGS CXXFLAGS LDFLAGS CCFLAGS MACOSX_DEPLOYMENT_TARGET
 
 if [ $EUID = 0 ]; then
     export PS1='\[\033[01;31m\]\u\[\033[39m\]@\[\033[37m\]\H\[\033[39m\]: \[\033[32m\]\W\[\033[39m\]$(__git_ps1) \[\033[01;39m\]\$ \[\033[39m\] '
