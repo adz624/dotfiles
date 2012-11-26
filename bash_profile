@@ -1,5 +1,5 @@
 # root filename .bashrc, use filename .bash_profile
-# @versio 0.02a
+# @versio 0.03a
 # @author yuchih <yuchih@2be.com.tw>
 
 if [ -d "/usr/local/zend" ]; then
@@ -40,5 +40,3 @@ if [ $EUID = 0 ]; then
 else
     export PS1='\[\033[01;39m\]\u\[\033[37m\]@\[\033[37m\]\H\[\033[39m\]: \[\033[32m\]\W\[\033[39m\]$(__git_ps1) \[\033[01;39m\]\$ \[\033[39m\] '
 fi
-
-alias grep='grep --color=auto'
