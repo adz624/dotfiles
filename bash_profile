@@ -1,9 +1,9 @@
-# root filename .bashrc, use filename .bash_profile
-# @versio 0.03a
+# osx root .bashrc, user .bash_profile
+# @versio 0.03
 # @author yuchih <yuchih@2be.com.tw>
 
 if [ -d "/usr/local/zend" ]; then
-    PATH=$PATH:/usr/local/zend/bin:/usr/local/zend/mysql/bin:/usr/local/sbin
+    PATH=$PATH:/usr/local/zend/bin
     LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/zend/lib
 fi
 
@@ -36,8 +36,10 @@ fi
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 if [ $EUID = 0 ]; then
-    export PS1='\[\033[01;31m\]\u\[\033[39m\]@\[\033[37m\]\H\[\033[39m\]: \[\033[32m\]\W\[\033[39m\]$(__git_ps1) \[\033[01;39m\]\$ \[\033[39m\] '
+    PS1='\[\033[01;31m\]\u\[\033[39m\]@\[\033[37m\]\H\[\033[39m\]: \[\033[32m\]\W\[\033[39m\]$(__git_ps1) \[\033[01;39m\]\$ \[\033[39m\] '
 else
-    export DYLD_LIBRARY_PATH='/usr/local/zend/lib'
-    export PS1='\[\033[01;39m\]\u\[\033[37m\]@\[\033[37m\]\H\[\033[39m\]: \[\033[32m\]\W\[\033[39m\]$(__git_ps1) \[\033[01;39m\]\$ \[\033[39m\] ' 
+    #export DYLD_LIBRARY_PATH=/usr/local/zend/lib
+    PS1='\[\033[01;39m\]\u\[\033[37m\]@\[\033[37m\]\H\[\033[39m\]: \[\033[32m\]\W\[\033[39m\]$(__git_ps1) \[\033[01;39m\]\$ \[\033[39m\] ' 
 fi
+
+alias zf="/usr/local/zend/bin/php public/index.php"
