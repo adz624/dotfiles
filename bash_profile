@@ -43,4 +43,4 @@ else
 fi
 
 #alias zf="/usr/local/zend/bin/php public/index.php"
-alias sl="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+alias sl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
