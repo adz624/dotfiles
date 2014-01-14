@@ -42,4 +42,5 @@ else
     PS1='\[\033[01;39m\]\u\[\033[37m\]@\[\033[37m\]\H\[\033[39m\]: \[\033[32m\]\W\[\033[39m\]$(__git_ps1) \[\033[01;39m\]\$ \[\033[39m\] ' 
 fi
 
-alias zf="/usr/local/zend/bin/php public/index.php"
+#alias zf="/usr/local/zend/bin/php public/index.php"
+alias sl="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
