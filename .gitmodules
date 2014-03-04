@@ -4,18 +4,12 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/tarbar"]
-	path = bundle/tarbar
-	url = https://github.com/majutsushi/tagbar.git
 [submodule "LS_COLORS"]
 	path = LS_COLORS
 	url = https://github.com/trapd00r/LS_COLORS.git
 [submodule "bundle/instant-markdown"]
 	path = bundle/instant-markdown
 	url = https://github.com/suan/vim-instant-markdown.git
-[submodule "bundle/zencoding"]
-	path = bundle/zencoding
-	url = https://github.com/mattn/zencoding-vim.git
 [submodule "bundle/nginx-syntax"]
 	path = bundle/nginx-syntax
 	url = https://github.com/andersjanmyr/nginx-vim-syntax.git
