@@ -13,6 +13,3 @@
 [submodule "bundle/nginx-syntax"]
 	path = bundle/nginx-syntax
     url = https://github.com/andersjanmyr/nginx-vim-syntax.git
-[submodule "bundle/tarbar"]
-    path = bundle/tarbar
-    url = https://github.com/majutsushi/tagbar.git
